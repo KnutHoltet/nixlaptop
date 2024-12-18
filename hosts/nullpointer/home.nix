@@ -10,8 +10,8 @@
   # TODO: Move options to a different file
   neofetch.enable = true;
   kitty.enable = true;
-  rofiwayland.enable = true;
   firefox.enable = true;
+  wofi.enable = true;
   
 
   home = {
