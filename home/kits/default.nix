@@ -3,5 +3,6 @@
     ./fetching
     ./terminals
     ./browsers
+    ./utilities
   ];
 }
