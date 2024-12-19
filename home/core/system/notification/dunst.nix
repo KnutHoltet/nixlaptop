@@ -3,7 +3,7 @@
     enable = true;
 
     settings = {
-      browser = "firefox -new-tab"
+      browser = "firefox -new-tab";
     };
     
    
