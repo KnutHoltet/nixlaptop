@@ -17,8 +17,6 @@
       inputs.hyprland.follows = "hyprland";
     };
     
-    wezterm.url = "github:wez/wezterm?dir=nix";
-
     
   };
 
