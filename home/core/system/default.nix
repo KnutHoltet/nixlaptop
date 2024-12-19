@@ -2,6 +2,6 @@
   imports = [
     ./hyprland
     ./launchers
-    ./notification
+    # ./notification
   ];
 }
