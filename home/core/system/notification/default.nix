@@ -1,5 +1,5 @@
 {
   imports = [
-    ./dunst
+    ./dunst.nix
   ];
 }
