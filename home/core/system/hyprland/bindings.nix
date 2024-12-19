@@ -12,7 +12,7 @@
       
       "$mod, U, exec, ${pkgs.kitty}/bin/kitty" # Kitty
       "$mod, B, exec, ${pkgs.firefox}/bin/firefox" # Firefox
-      "$mod, SPACE, exec, menu" # Launcher
+      "$mod, SPACE, exec, ${pkgs.wofi}/bin/wofi" # Launcher
 
       "$mod, Q, killactive," # Close Window
       "$mod, T, togglefloating," # Toggle Floating
