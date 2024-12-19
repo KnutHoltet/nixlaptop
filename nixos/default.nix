@@ -6,5 +6,6 @@
     ./nix.nix
     ./network-manager.nix
     ./audio.nix
+    ./xdg-portal.nix
   ];
 }
