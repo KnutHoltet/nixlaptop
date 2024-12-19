@@ -1,5 +1,6 @@
 {
   imports = [
     ./fun
+    ./clipboards
   ];
 }
