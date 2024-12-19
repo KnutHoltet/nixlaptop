@@ -4,5 +4,6 @@
     ./launchers
     ./notification
     ./bars
+    ./utils
   ];
 }
