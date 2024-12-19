@@ -3,5 +3,6 @@
     ./hyprland
     ./launchers
     ./notification
+    ./bars
   ];
 }
