@@ -11,7 +11,11 @@
     };
 
     shellAliases = {
+      # Fun stuff
       cs = "cowsay";
+     
+      # NixOs/Nix related
+      nswitch = "sudo nixos-rebuild switch --flake ."; # current dir
     };
 
   };
