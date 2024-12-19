@@ -3,11 +3,10 @@
     enable = true;
 
     settings = {
-      browser = "firefox -new-tab";
+      global = {
+        browser = "firefox -new-tab";
+      };
     };
-    
-   
-
 
   };
 }
