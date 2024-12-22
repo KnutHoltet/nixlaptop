@@ -50,7 +50,7 @@ in
       };
       
       "custom/os_button" = {
-        format = "nix ;(";
+        format = "󱄅";
         on-click = "wofi --show drun";
         tooltip = false;
       };
