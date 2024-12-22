@@ -13,6 +13,12 @@
       #workspaces button {
         padding: 0 20px;
       }
+     
+
+     #custom-os_button {
+       font-family: "JetBrainsMono Nerd Font";
+     }
+      
     '';
   };
 }
