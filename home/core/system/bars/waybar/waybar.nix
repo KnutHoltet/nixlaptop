@@ -2,7 +2,7 @@
   
   imports = [
     ./style.nix
-    # ./settings.nix
+    ./settings.nix
   ];
 
   options = {
