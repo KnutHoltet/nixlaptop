@@ -13,10 +13,14 @@
   # boot.loader.grub.enable = true;
   # boot.loader.grub.device = "/dev/sda";
   # boot.loader.grub.useOSProber = true;
-  
-  fonts.packages = with pkgs; [
-    nerd-fonts.jetbrains-mono
-  ];
+
+  fonts = {
+    enableDefaultPackages = true;
+    packages = with pkgs; [
+      nerd-fonts.jetbrains-mono
+    ];
+ 
+  };
 
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
