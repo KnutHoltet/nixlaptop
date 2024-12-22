@@ -16,7 +16,7 @@
      
 
      #custom-os_button {
-       font-family: "Nerd Font";
+       font-family: "JetBrainsMono Nerd Font";
      }
       
     '';
