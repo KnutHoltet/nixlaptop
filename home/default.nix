@@ -6,9 +6,8 @@
   ];
   
 
-  fonts.packages = with pkgs; [
-    nerd-fonts.jetbrains-mono
-  ];
+  # fonts.fontconfig.defaultFonts.monospace
+  home.packages = with pkgs, [ nerd-fonts.jetbrains-mono ];
  
 
 
