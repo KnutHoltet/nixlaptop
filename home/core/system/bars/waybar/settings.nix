@@ -23,7 +23,7 @@ in
       ];
 
       battery = {
-        timezone = "${timeZone}";
+        timezone = "Europe/Norway/Oslo";
         format = "{capacity}% {icon}";
         format-alt = "{time} {icon}";
         format-charging = "{capacity}% lader";
