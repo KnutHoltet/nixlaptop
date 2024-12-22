@@ -12,6 +12,7 @@
   kitty.enable = true;
   firefox.enable = true;
   wofi.enable = true;
+  waybar.enable = true;
   
 
   home = {
