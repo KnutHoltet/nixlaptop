@@ -32,6 +32,11 @@ in
         "clock"
       ];
 
+      hyprland/language = {
+        format = "{}";
+        format-no = "NOB";
+      };
+
       battery = {
         timezone = "${timeZone}";
         format = "{capacity}% {icon}";
