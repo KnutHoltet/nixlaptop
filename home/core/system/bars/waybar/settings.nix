@@ -44,7 +44,15 @@ in
 
       "hyprland/workspaces" = {
         icon-size = 32;
-        
+        spacing = 16;
+        on-scroll-up = "hyprctl dispatch workspace r+1";
+        on-scroll-down = "hyprctl dispatch workspace r-1";
+      };
+      
+      "custom/os_button" = {
+        format = "NIX";
+        on-click = "wofi --show drun";
+        tooltip = false;
       };
 
       battery = {
