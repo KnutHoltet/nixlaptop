@@ -5,9 +5,14 @@ in
 {
   programs.waybar.settings = {
     mainBar = {
-      layer = "top";
-      position = "top";
-      height = 30;
+      layer = "bottom";
+      position = "bottom";
+      height = 41;
+      mod = "dock";
+      exclusive = true;
+      gtk-layer-shell = true;
+      margin-bottom = -1;
+      passthrough = false;
       output = [
         "eDP-1"
         "HDMI-A-1"
@@ -35,6 +40,11 @@ in
       "hyprland/language" = {
         format = "{}";
         format-no = "NOB";
+      };
+
+      "hyprland/workspaces" = {
+        icon-size = 32;
+        
       };
 
       battery = {
