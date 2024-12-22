@@ -50,7 +50,7 @@ in
       };
       
       "custom/os_button" = {
-        format = "NIX";
+        format = "${(import ../. {}).logo}";
         on-click = "wofi --show drun";
         tooltip = false;
       };
