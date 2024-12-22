@@ -33,6 +33,15 @@
         format = "{usage}";
         tooltip = false;
       };
+      
+      network = {
+        interval = 1;
+        format-alt = "{ifname}: {ipaddr}/{cidr}";
+        format-disconnected = "Disconnected";
+        format-ethernet = "{ifname}: {ipaddr}/{cidr}";
+        format-linked = "{ifname} (No IP)";
+        format-wifi = "{essid} ({signalStrength}%)";
+      };
 
 
     };
