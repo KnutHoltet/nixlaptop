@@ -9,7 +9,10 @@
         "HDMI-A-1"
       ];
 
-      modules-right = [ "temperatue" ];
+      modules-right = [
+        "network"
+      ];
+
     };
   };
 }
