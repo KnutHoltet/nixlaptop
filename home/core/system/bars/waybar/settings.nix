@@ -32,7 +32,7 @@ in
         "clock"
       ];
 
-      hyprland/language = {
+      hyprland-language = {
         format = "{}";
         format-no = "NOB";
       };
