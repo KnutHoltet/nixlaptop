@@ -10,8 +10,30 @@
       ];
 
       modules-right = [
+        "pulseaudio"
         "network"
+        "cpu"
+        "memory"
+        "temperature"
+        "clock"
       ];
+
+      battery = {
+        format = "{capacity}% {icon}";
+        format-alt = "{time} {icon}";
+        format-charging = "{capacity}% lader";
+      };
+
+      clock = {
+        format-alt = "{:%Y-%m-%d}";
+        tooltip-format = "{:%Y-%m-%d | %H:%M}";
+      };
+
+      cpu = {
+        format = "{usage}";
+        tooltip = false;
+      };
+
 
     };
   };
