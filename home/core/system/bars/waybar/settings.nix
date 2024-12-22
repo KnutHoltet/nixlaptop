@@ -9,7 +9,7 @@
         "HDMI-A-1"
       ];
 
-      modules-rigth = [ "temperatue" ];
+      modules-right = [ "temperatue" ];
     };
   };
 }
