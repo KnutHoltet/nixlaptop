@@ -25,7 +25,7 @@ in
       };
       
       exec-once = [
-        "waybar"
+        # "waybar"
       ];
       
 
