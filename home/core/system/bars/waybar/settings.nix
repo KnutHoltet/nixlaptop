@@ -12,13 +12,23 @@ in
         "eDP-1"
         "HDMI-A-1"
       ];
+      
+      modules-left = [
+        "custom/os_button"
+        "hyprland/workspaces"
+        "wlr/taskbar"
+      ];
 
       modules-right = [
+        "cpu"
+        "temperature"
+        "memory"
+        "disk"
+        "tray"
         "pulseaudio"
         "network"
-        "cpu"
-        "memory"
-        "temperature"
+        "battery"
+        "hyprland/language"
         "clock"
       ];
 
