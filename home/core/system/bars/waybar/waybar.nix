@@ -11,6 +11,10 @@
   };
 
   config = lib.mkIf config.waybar.enable {
+    
+    fonts.packages = with pkgs; [
+      nerdfonts.jetbrains-mono
+    ];
 
     programs.waybar = {
       enable = true;
