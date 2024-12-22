@@ -24,6 +24,10 @@ in
         kb_layout = keyboardLayout;
       };
       
+      exec-once = [
+        "waybar"
+      ];
+      
 
 
      
