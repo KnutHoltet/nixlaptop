@@ -1,3 +1,7 @@
+{ config, pkgs, ...  }:
+let
+  timeZone = config.var.timeZone;
+in
 {
   programs.waybar.settings = {
     mainBar = {
@@ -19,6 +23,7 @@
       ];
 
       battery = {
+        timezone: "${timeZone}";
         format = "{capacity}% {icon}";
         format-alt = "{time} {icon}";
         format-charging = "{capacity}% lader";
