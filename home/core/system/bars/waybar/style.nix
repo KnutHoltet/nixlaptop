@@ -16,9 +16,11 @@
      
 
      #custom-os_button {
-       font-family: "JetBrainsMono Nerd Font";
+       font-family: "Nerd Font";
      }
       
     '';
   };
 }
+
+
