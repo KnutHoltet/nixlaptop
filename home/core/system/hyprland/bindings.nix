@@ -5,7 +5,7 @@
   # "$mod, U, exec, wezterm/bin/wezterm" # Wezterm
 
 {
-  imports = [  ];
+  imports = [ ./submap.nix ];
   
   wayland.windowManager.hyprland.settings = {
     bind = [
