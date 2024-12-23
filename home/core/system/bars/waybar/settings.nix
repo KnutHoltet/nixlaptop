@@ -87,7 +87,7 @@ in
         format  = "{percentage}%";
         max-length = 10;
         tooltip = true;
-        tooltip-format = "RAM - {used:0.1f}GiB used"
+        tooltip-format = "RAM - {used:0.1f}GiB used";
       };
 
       "wlr/taskbar" = {
