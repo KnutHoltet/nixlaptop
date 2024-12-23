@@ -61,6 +61,7 @@ in
         max-length = 10;
       };
 
+      # TODO: Add icon
       temperature = {
         hwmon-path-abs = "/sys/devices/platform/coretemp.0/hwmon";
         input-filename = "temp2_input";
@@ -69,6 +70,40 @@ in
         format-critical = "({temperatureC}°C)";
         format = "({temperatureC}°C)";
       };
+
+      # TODO: Add icon
+      disk = {
+        interval = 30;
+        format = "{percentage_used}%";
+        path = "/";
+        tooltip = true;
+        unit = "GB";
+        tooltip-format = "Available {free} of {total}";
+      };
+
+      # TODO: Add icon
+      memory = {
+        interval = 10;
+        format  = "{percentage}%";
+        max-length = 10;
+        tooltip = true;
+        tooltip-format = "RAM - {used:0.1f}GiB used"
+      };
+
+      "wlr/taskbar" = {
+         format = "{icon} {title:.17}";
+         icon-size = 28;
+         spacing = 3;         
+         on-click-middle = "close";
+         tooltip-format = "{title}";
+         ignore-list = [];
+         on-click = "activate";
+       };
+
+       tray = {
+         icon-size = 18;
+         spacing = 3;
+       };
 
       
       
