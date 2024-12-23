@@ -139,7 +139,7 @@ in
       };
 
       network = {
-        format-wifi = " {icon}";
+        format-wifi = "{icon}";
         format-ethernet = "  ";
         format-disconnected = "󰌙";
         format-icons = [
