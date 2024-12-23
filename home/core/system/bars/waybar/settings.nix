@@ -136,6 +136,21 @@ in
 
       };
 
+      network = {
+        format-wifi = " {icon}";
+        format-ethernet = "  ";
+        format-disconnected = "󰌙";
+        format-icons = [
+          "󰤯 "
+          "󰤟 "
+          "󰤢 "
+          "󰤢 "
+          "󰤨 "
+        ];
+
+      };
+
+
       
       battery = {
         timezone = "${timeZone}";
@@ -143,16 +158,6 @@ in
         format-alt = "{time} {icon}";
         format-charging = "{capacity}% lader";
       };
-
-      network = {
-        interval = 1;
-        format-alt = "{ifname}: {ipaddr}/{cidr}";
-        format-disconnected = "Disconnected";
-        format-ethernet = "{ifname}: {ipaddr}/{cidr}";
-        format-linked = "{ifname} (No IP)";
-        format-wifi = "{essid} ({signalStrength}%)";
-      };
-
 
     };
   };
