@@ -55,6 +55,23 @@ in
         tooltip = false;
       };
 
+      cpu = {
+        interval = 5;
+        format = "{usage}";
+        max-length = 10;
+      };
+
+      temperature = {
+        hwmon-path-abs = "/sys/devices/platform/coretemp.0/hwmon";
+        input-filename = "temp2_input";
+        critical-threshold = 75;
+        tooltip = false;
+        format-critical = "({temperatureC}°C)";
+        format = "({temperatureC}°C)";
+      };
+
+      
+      
       battery = {
         timezone = "${timeZone}";
         format = "{capacity}% {icon}";
@@ -67,11 +84,6 @@ in
         tooltip-format = "{:%Y-%m-%d | %H:%M}";
       };
 
-      cpu = {
-        format = "{usage}";
-        tooltip = false;
-      };
-      
       network = {
         interval = 1;
         format-alt = "{ifname}: {ipaddr}/{cidr}";
