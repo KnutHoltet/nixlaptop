@@ -12,7 +12,11 @@
   kitty.enable = true;
   firefox.enable = true;
   wofi.enable = true;
-  waybar.enable = true;
+
+
+  # TODO: Move waybar options to different file
+  # Options to chose from: waybarWindows, 
+  waybarWindows.enable = true;
   
 
   home = {

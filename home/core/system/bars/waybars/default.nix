@@ -1,5 +1,5 @@
 {
   imports = [
-    ./waybars
+    ./waybar-windows
   ];
 }
