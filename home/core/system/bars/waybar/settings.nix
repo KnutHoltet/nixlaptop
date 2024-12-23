@@ -3,6 +3,11 @@ let
   timeZone = config.var.timeZone;
 in
 {
+  # *** ** ** ** * *** 
+  # I am using NerdFonts
+  # ** *** ** ** ** ** * * 
+
+
   programs.waybar.settings = {
     mainBar = {
       layer = "bottom";
@@ -61,7 +66,6 @@ in
         max-length = 10;
       };
 
-      # TODO: Add icon
       temperature = {
         hwmon-path-abs = "/sys/devices/platform/coretemp.0/hwmon";
         input-filename = "temp2_input";
@@ -71,20 +75,18 @@ in
         format = "({temperatureC}°C)";
       };
 
-      # TODO: Add icon
       disk = {
         interval = 30;
-        format = "{percentage_used}%";
+        format = "󰋊 {percentage_used}%";
         path = "/";
         tooltip = true;
         unit = "GB";
         tooltip-format = "Available {free} of {total}";
       };
 
-      # TODO: Add icon
       memory = {
         interval = 10;
-        format  = "{percentage}%";
+        format  = " {percentage}%";
         max-length = 10;
         tooltip = true;
         tooltip-format = "RAM - {used:0.1f}GiB used";
@@ -149,14 +151,32 @@ in
         ];
 
       };
-
-
       
       battery = {
-        timezone = "${timeZone}";
-        format = "{capacity}% {icon}";
+        states = {
+          good = 95;
+          warning = 40;
+          critical = 20;
+        };
+
+        format = "{icon} {capacity}%";
+        format-charging = " {capacity}%";
+        format-plugged = " {capacity}%";
         format-alt = "{time} {icon}";
-        format-charging = "{capacity}% lader";
+        format-icons = [
+          "󰂎"
+          "󰁺"
+          "󰁻"
+          "󰁼"
+          "󰁽"
+          "󰁾"
+          "󰁿"
+          "󰂀"
+          "󰂁"
+          "󰂂"
+          "󰁹"
+        ];
+
       };
 
     };
