@@ -4,5 +4,6 @@
     ./terminals
     ./browsers
     ./utilities
+    ./messaging
   ];
 }
