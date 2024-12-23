@@ -24,8 +24,7 @@
       "$mod, k, movefocus, u" # Move Focus Down 
 
 
-      # "$mod, S, exec, ${pkgs.firefox}/bin/firefox :open $(wofi --show dmenu -L 1 -p 'Search on internet')"
-      "$mod, S, exec, firefox 'https://www.google.com/search?q=$(wofi --show dmenu -L 1 -p 'Search on internet')'"
+      "$mod, S, exec, ${pkgs.firefox}/bin/firefox https://www.google.com/search?q=$(wofi --show dmenu -L 1 -p 'Search on internet')"
 
     ]++ (builtins.concatLists (builtins.genList (i:
       let ws = i + 1;
