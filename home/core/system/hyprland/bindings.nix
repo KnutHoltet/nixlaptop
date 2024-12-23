@@ -12,7 +12,6 @@
       
       "$mod, U, exec, ${pkgs.kitty}/bin/kitty" # Kitty
       "$mod, B, exec, ${pkgs.firefox}/bin/firefox" # Firefox
-      # "$mod, SPACE, exec, ${pkgs.wofi}/bin/wofi" # Launcher
       "$mod, SPACE, exec, wofi --show drun" # Launcher
 
       "$mod, Q, killactive," # Close Window
@@ -25,7 +24,12 @@
       "$mod, k, movefocus, u" # Move Focus Down 
 
 
-    ]; 
+    ]++ (builtins.concatLists (builtins.genList (i:
+      let ws = i + 1;
+      in [
+        "$mod,code:1${toString i}, workspace, ${toString ws}"
+        "$mod SHIFT,code:1${toString i}, movetoworkspace, ${toString ws}"
+      ]) 9));
     
   };
 
