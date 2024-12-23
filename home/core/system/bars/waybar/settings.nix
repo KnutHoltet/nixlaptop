@@ -44,7 +44,7 @@ in
 
       "hyprland/language" = {
         format = "{}";
-        format-no = "NOB";
+        format-no = " NOB";
       };
 
       "hyprland/workspaces" = {
