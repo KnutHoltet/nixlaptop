@@ -24,7 +24,7 @@
       "$mod, k, movefocus, u" # Move Focus Down 
 
 
-      "$shiftMod, S, exec, ${pkgs.firefox}/bin/firefox https://www.google.com/search?q=$(wofi --show dmenu -L 1 -p 'Search on internet')"
+      "$shiftMod, S, exec, ${pkgs.firefox}/bin/firefox https://www.google.com/search?q=$(wofi --show dmenu -L 1 -p 'Search on internet' | sed 's/ /+/g')"
 
     ]++ (builtins.concatLists (builtins.genList (i:
       let ws = i + 1;
