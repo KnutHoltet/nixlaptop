@@ -124,8 +124,16 @@ in
             today = "<span color='#ff6699'><b><u>{}</u></b></span>";
 
           };
-
         };
+
+        actions = {
+          on-click-right = "mode";
+          on-click-forward = "tz_up";
+          on-click-backward = "tz_down";
+          on-scroll-up = "shift_up";
+          on-scroll-down = "shift_down";
+        };
+
       };
 
       
