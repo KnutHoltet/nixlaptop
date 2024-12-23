@@ -15,12 +15,16 @@ in
     enable = true;
     xwayland = {
       enable = true;
-      force_zero_scaling = true;
     };
  
     systemd.enable = true;
 
     settings = {
+      xwayland = {
+        force_zero_scaling = true;
+      };
+ 
+      
       "$mod" = "SUPER";
       "$shiftMod" = "SUPER_SHIFT";
 
