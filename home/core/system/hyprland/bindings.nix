@@ -33,6 +33,12 @@
         "$mod SHIFT,code:1${toString i}, movetoworkspace, ${toString ws}"
       ]) 9));
     
+    bindm = [
+      "$mod, mouse:272, movewindow"
+      "$mod, R, resizewindow"
+ 
+    ];
+
   };
 
 
