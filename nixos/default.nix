@@ -8,5 +8,6 @@
     ./audio.nix
     ./xdg-portal.nix
     ./timezone.nix
+    ./fonts.nix
   ];
 }
