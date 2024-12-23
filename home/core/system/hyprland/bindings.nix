@@ -23,7 +23,7 @@
       "$mod, j, movefocus, d" # Move Focus Down 
       "$mod, k, movefocus, u" # Move Focus Down 
 
-      "shiftMod, l, resizewindow, 10 0"
+      "shiftMod, l, resize, 10 0"
 
 
       "$shiftMod, S, exec, ${pkgs.firefox}/bin/firefox https://www.google.com/search?q=$(wofi --show dmenu -L 1 -p 'Search on internet')"
