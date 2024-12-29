@@ -17,7 +17,6 @@
       inputs.hyprland.follows = "hyprland";
     };
     
-    
   };
 
   outputs =
