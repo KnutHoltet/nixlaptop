@@ -1,6 +1,6 @@
 {
   imports = [
-    ./waybar-windows
+    # ./waybar-windows
     ./waybar-crystal
   ];
 }
