@@ -5,5 +5,6 @@ All credits to them and the great repos!
 [iynaix](https://github.com/iynaix)
 [anotherhadi](https://github.com/anotherhadi)
 [XNM1](https://github.com/XNM1)
+[namishh](https://github.com/namishh)
 
 

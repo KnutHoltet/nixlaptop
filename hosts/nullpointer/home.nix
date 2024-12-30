@@ -16,7 +16,7 @@
 
   # TODO: Move waybar options to different file
   # Options to chose from: waybarWindows, 
-  waybarWindows.enable = true;
+  waybarCrystal.enable = true;
   
 
   home = {
