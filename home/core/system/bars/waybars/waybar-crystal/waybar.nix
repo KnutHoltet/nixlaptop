@@ -10,7 +10,7 @@
       lib.mkEnableOption "Enables Waybar";
   };
 
-  config = lib.mkIf config.waybar.enable {
+  config = lib.mkIf config.waybarCrystal.enable {
     
 
     programs.waybar = {
