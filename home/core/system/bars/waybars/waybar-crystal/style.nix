@@ -1,7 +1,7 @@
-{ colors, ...  }: {
+{  ...  }: {
 
 
-  programs.waybar = with colors; {
+  programs.waybar = {
     style = ''
         window#waybar {
           background-color: #${background};
