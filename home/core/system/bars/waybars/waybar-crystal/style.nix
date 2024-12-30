@@ -1,10 +1,10 @@
-{  ...  }: {
+{ config, ...  }: {
 
 
   programs.waybar = {
     style = ''
         window#waybar {
-          background-color: #${background};
+          background-color: #${config.colorScheme.colors.base01};
           color: #${foreground};
           border-bottom: none;
         }
