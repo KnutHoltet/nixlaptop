@@ -2,7 +2,7 @@
 
 {
 
-  config = lib.mkIf config.waybarWindows.enable 
+  config = lib.mkIf config.waybarWindows.enable {
 
   
   programs.waybar = {
@@ -192,7 +192,7 @@ tooltip label{
 }
     '';
   };
-  };
+ };
 }
 
 
