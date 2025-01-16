@@ -7,7 +7,7 @@
 
 
   config = lib.mkIf config.ghostty.enable {
-    # home.packages = with pkgs; [ ghostty ];
+    home.packages = with pkgs; [ ghostty ];
     # environment.systemPackes = with pkgs; [ ];
   };
  
