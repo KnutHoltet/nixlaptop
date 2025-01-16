@@ -20,6 +20,7 @@ in
   console.keyMap = keyboardLayout;
 
   environment.systemPackages = with pkgs; [
+    ghostty
     fd
     bc
     git-ignore
