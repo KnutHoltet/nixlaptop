@@ -5,5 +5,6 @@
     ./browsers
     ./utilities
     ./messaging
+    ./toolkit
   ];
 }
