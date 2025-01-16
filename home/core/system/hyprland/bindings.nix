@@ -10,7 +10,8 @@
   wayland.windowManager.hyprland.settings = {
     bind = [
       
-      "$mod, U, exec, ${pkgs.kitty}/bin/kitty" # Kitty
+      # "$mod, U, exec, ${pkgs.kitty}/bin/kitty" # Kitty
+      "$mod, U, exec, ${pkgs.ghostty}/bin/ghostty" # Ghostty
       "$mod, B, exec, ${pkgs.firefox}/bin/firefox" # Firefox
       "$mod, SPACE, exec, wofi --show drun" # Launcher
 

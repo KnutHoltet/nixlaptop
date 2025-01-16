@@ -10,6 +10,7 @@
   # TODO: Move options to a different file
   neofetch.enable = true;
   kitty.enable = true;
+  ghostty.enable = true;
   firefox.enable = true;
   wofi.enable = true;
 
