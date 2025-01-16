@@ -14,8 +14,6 @@
   # boot.loader.grub.device = "/dev/sda";
   # boot.loader.grub.useOSProber = true;
  
-  # TODO: Maby modularize custom options
-  gotham.enable = true;
 
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
