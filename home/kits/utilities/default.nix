@@ -3,6 +3,7 @@
     ./fun
     ./clipboards
     ./search-tools
+    ./yazi.nix
   ];
 
 
