@@ -3,7 +3,7 @@ let
   timeZone = config.var.timeZone;
 in
 {
-  config = lib.mkIf config.waybarCrystal.enable = {
+  config = lib.mkIf config.waybarCrystal.enable  {
 
   programs.waybar.settings = {
     mainBar = {
