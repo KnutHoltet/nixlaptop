@@ -1,4 +1,10 @@
+{ lib, config, ...  }:
+
 {
+
+  config = lib.mkIf config.waybarWindows.enable 
+
+  
   programs.waybar = {
     style = ''
       
@@ -185,6 +191,7 @@ tooltip label{
 	background: @bg_hover;
 }
     '';
+  };
   };
 }
 

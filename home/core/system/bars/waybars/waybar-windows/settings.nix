@@ -1,4 +1,4 @@
-{ config, pkgs, ...  }:
+{ config, pkgs, lib, ...  }:
 let
   timeZone = config.var.timeZone;
 in
@@ -7,6 +7,7 @@ in
   # I am using NerdFonts
   # ** *** ** ** ** ** * * 
 
+  config = lib.mkIf config.waybarWindows.enable {
 
   programs.waybar.settings = {
     mainBar = {
@@ -197,6 +198,7 @@ in
      
 
     };
+  };
   };
 }
 

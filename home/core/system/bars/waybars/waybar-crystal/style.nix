@@ -1,6 +1,8 @@
-{ config, ...  }: {
+{ config, lib, ...  }: {
 
 
+  config = lib.mkIf config.waybarCrystal.enable {
+  
   programs.waybar = {
     style = ''
         window#waybar {
@@ -80,6 +82,7 @@
         } 
     '';
   };
+};
 }
 
 
