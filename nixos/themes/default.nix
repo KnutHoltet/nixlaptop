@@ -1,5 +1,0 @@
-{
-  imports = [
-    ./gotham.nix
-  ];
-}

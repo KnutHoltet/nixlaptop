@@ -17,7 +17,6 @@
       inputs.hyprland.follows = "hyprland";
     };
     
-    stylix.url = "github:danth/stylix";
     
   };
 
@@ -33,7 +32,6 @@
     modules = [
      ./hosts/nullpointer/default.nix
      inputs.home-manager.nixosModules.home-manager
-     inputs.stylix.nixosModules.stylix
 
     ];
    };
