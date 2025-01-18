@@ -5,6 +5,12 @@
   };
  
   config = lib.mkIf config.thunar.enable {
-    programs.thunar.enable = true;
+    home.packages = with pkgs.xfce; [
+      thunar
+      xfconf
+      tumbler
+      thunar-archive-plugin
+      thunar-volman
+    ];
   };
 }
