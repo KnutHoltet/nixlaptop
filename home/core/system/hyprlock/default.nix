@@ -13,7 +13,7 @@
       monitor = "";
 
       # $HOME/Something/something.png
-      path = "$HOME/Downloads/black-and-white.png"; # TODO: only png supported for now
+      path = "/Downloads/black-and-white.png"; # TODO: only png supported for now
 
     }; # background
  
