@@ -4,6 +4,7 @@
     ./clipboards
     ./search-tools
     ./yazi.nix
+    ./thunar.nix
   ];
 
 
