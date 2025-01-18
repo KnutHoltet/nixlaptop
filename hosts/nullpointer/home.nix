@@ -13,6 +13,7 @@
   ghostty.enable = true;
   firefox.enable = true;
   wofi.enable = true;
+  thunar.enable = true;
 
 
   # TODO: Move waybar options to different file
