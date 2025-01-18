@@ -5,6 +5,6 @@
   };
  
   config = lib.mkIf config.thunar.enable {
-    home.packages = with pkgs; [ thunar ];
+    programs.thunar.enable = true;
   };
 }
