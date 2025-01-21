@@ -17,6 +17,9 @@
      
       # NixOs/Nix related
       nswitch = "sudo nixos-rebuild switch --flake ."; # current dir
+
+      # LS
+      ls = "eza";
     };
 
   };
