@@ -86,7 +86,7 @@
 
         {
           monitor = "";
-          text = "Pratik Gayen";
+          text = "Knut Holtet";
           color = "rgba(242, 243, 244, 0.75)";
           font_size = 12;
           font_family = "SF Pro Display Bold";
