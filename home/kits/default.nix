@@ -6,6 +6,6 @@
     ./utilities
     ./messaging
     ./toolkit
-    ./workspaces
+    ./workspace
   ];
 }
