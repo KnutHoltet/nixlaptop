@@ -21,9 +21,24 @@
         brightness = 0;
         vibrancy = 0;
         vibrancy_darkness = 0.0;
- 
-
       }; # background
+
+
+      input-field = lib.mkForce {
+        monitor = "";
+        size = "300, 30";
+        outline_thickness = 0;
+        dots_size = 0.0;
+        dots_spacing = 0.55;
+        dots_center = true;
+        dots_rounding = -1;
+        outer_color = "rgba(242, 243, 244, 0)";
+        inner_color = "rgba(242, 243, 244, 0)";
+        font_color = "rgba(242, 243, 244, 0.75)";
+
+
+      }; # input-field
+
     }; # settings
     
  
