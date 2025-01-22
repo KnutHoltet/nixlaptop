@@ -108,6 +108,21 @@
 
       ]; # label
 
+      image = {
+        monitor = "";
+        path = "$HOME/Downloads/thorfinnPfp.png";
+        border_color = "0xffdddddd";
+        border_size = 0;
+        size = 73;
+        rounding = -1;
+        rotate = 0;
+        reload_time = -1;
+        reload_cmd = "";
+        position = "0, -353";
+        halign = "center";
+        valign = "center";
+      };
+
     }; # settings
     
  
