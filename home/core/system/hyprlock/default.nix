@@ -95,6 +95,16 @@
           valign = "center";
         }
 
+        {
+          monitor = "";
+          text = "Enter Password";
+          color = "rgba(242, 243, 244, 0.75)";
+          font_size = 10;
+          font_family = "SF Pro Display";
+          positon = "0, -438";
+          halign = "center";
+          valign = "center";
+        }
 
       ]; # label
 
