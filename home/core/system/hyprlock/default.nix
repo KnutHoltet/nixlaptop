@@ -84,6 +84,17 @@
           valign = "center";
         }
 
+        {
+          monitor = "";
+          text = "Pratik Gayen";
+          color = "rgba(242, 243, 244, 0.75)";
+          font_size = 12;
+          font_family = "SF Pro Display Bold";
+          position = "0, -407";
+          halign = "center";
+          valign = "center";
+        }
+
 
       ]; # label
 
