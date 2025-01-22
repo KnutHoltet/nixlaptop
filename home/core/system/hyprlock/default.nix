@@ -1,3 +1,4 @@
+# TODO: This stuff has colors
 # TODO: Set a background for lockscreen
 { config, lib, ... }: {
   programs.hyprlock = {
@@ -35,6 +36,13 @@
         outer_color = "rgba(242, 243, 244, 0)";
         inner_color = "rgba(242, 243, 244, 0)";
         font_color = "rgba(242, 243, 244, 0.75)";
+        fade_on_empty = false;
+        placeholder_text = "";
+        hide_input = false;
+        check_color = "rgba(204, 136, 34, 0)";
+        fail_color = "rgba(204, 34, 34, 0)";
+        fail_text = "$FAIL <b>($ATTEMPTS)</b>";
+        fail_transition = 300;
 
 
       }; # input-field
