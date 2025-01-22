@@ -63,7 +63,7 @@
 
         {
           monitor = "";
-          text = "cmd[update:1000] echo "$(date + "%A, %B %d")"";
+          text = ''cmd[update:1000] echo "$(date + "%A, %B %d")"'';
 
         }
 
