@@ -73,6 +73,18 @@
         } # date label
 
 
+        {
+          monitor = "";
+          text = ''cmd[update:1000] echo "$(date + "%k:%M")"'';
+          color = "rgba(242, 243, 244, 0.75)";
+          font_size = 93;
+          font_family = "SF Pro Display Bold";
+          position = "0, 310";
+          halign = "center";
+          valign = "center";
+        }
+
+
       ]; # label
 
     }; # settings
