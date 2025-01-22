@@ -53,6 +53,23 @@
         valign = "center";
       }; # input-field
 
+
+      label = [
+        # TODO: lockscreen shows music
+        {
+          monitor = "";        
+          
+        } # Shows active playing music
+
+        {
+          monitor = "";
+          text = "cmd[update:1000] echo "$(date + "%A, %B %d")"";
+
+        }
+
+
+      ]; # label
+
     }; # settings
     
  
