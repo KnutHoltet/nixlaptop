@@ -64,8 +64,13 @@
         {
           monitor = "";
           text = ''cmd[update:1000] echo "$(date + "%A, %B %d")"'';
-
-        }
+          color = "rgba(242, 243, 244, 0.75)";
+          font_size = 30;
+          font_family = "SF Pro Display Bold";
+          position = "0, 405";
+          halign = "center";
+          valign = "center";
+        } # date label
 
 
       ]; # label
