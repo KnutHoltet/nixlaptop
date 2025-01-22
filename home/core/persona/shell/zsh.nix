@@ -19,7 +19,7 @@
       nswitch = "sudo nixos-rebuild switch --flake ."; # current dir
 
       # LS
-      e = "eza";
+      ls  = "eza --icons=always --no-quotes";
     };
 
   };
