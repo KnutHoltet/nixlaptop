@@ -20,6 +20,7 @@ in
   console.keyMap = keyboardLayout;
 
   environment.systemPackages = with pkgs; [
+    obsidian
     fd
     bc
     git-ignore
