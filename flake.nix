@@ -35,7 +35,7 @@
      ./hosts/nullpointer/default.nix
      inputs.home-manager.nixosModules.home-manager
      # inputs.nvf.nixosModules.default
-     nvf.homeManagerModules.default
+     inputs.nvf.homeManagerModules.default
 
     ];
    };
