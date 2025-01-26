@@ -5,6 +5,7 @@
     ./search-tools
     ./yazi.nix
     ./thunar.nix
+    ./pde
   ];
 
 
