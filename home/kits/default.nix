@@ -7,5 +7,6 @@
     ./messaging
     ./toolkit
     ./workspace
+    ./pde
   ];
 }

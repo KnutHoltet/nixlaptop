@@ -16,6 +16,8 @@
       url = "github:hyprwm/hyprland-plugins";
       inputs.hyprland.follows = "hyprland";
     };
+
+    nvf.url = "github:notashelf/nvf";
     
     
   };
@@ -32,6 +34,7 @@
     modules = [
      ./hosts/nullpointer/default.nix
      inputs.home-manager.nixosModules.home-manager
+     inputs.nvf.nixosModules.default
 
     ];
    };
