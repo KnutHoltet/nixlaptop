@@ -25,8 +25,8 @@ in
       };
 
       monitor = [
-        "eDP-1, preferred, auto, 1"
-        "HDMI-A-1, preferred, auto, 1, mirror, eDP-1"
+        "eDP-1, preferred, auto, 1, mirror,  main"
+        "HDMI-A-1, preferred, auto, 1, mirror, main"
       ];
  
       
