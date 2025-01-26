@@ -29,13 +29,19 @@
    # in
 
   {
+  
+   packages."x86_64-linux".default =
+     (nvf.lib.neovimConfiguration {
+       pkgs = nixpkgs.legacyPackages."x86_64-linux";
+       modules = [ ./home/kits/pde/nvf.nix ];
+     }).neovim;
+
+
    nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
     specialArgs =  { inherit inputs; };
     modules = [
      ./hosts/nullpointer/default.nix
      inputs.home-manager.nixosModules.home-manager
-     # inputs.nvf.nixosModules.default
-     nvf.homeManagerModules.default
 
     ];
    };
