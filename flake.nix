@@ -30,11 +30,11 @@
 
   {
   
-   packages."x86_64-linux".default =
-     (nvf.lib.neovimConfiguration {
-       pkgs = nixpkgs.legacyPackages."x86_64-linux";
-       modules = [ ./home/kits/pde/nvf.nix ];
-     }).neovim;
+   # packages."x86_64-linux".default =
+   #   (nvf.lib.neovimConfiguration {
+   #     pkgs = nixpkgs.legacyPackages."x86_64-linux";
+   #     modules = [ ./home/kits/pde/nvf.nix ];
+   #   }).neovim;
 
 
    nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
@@ -42,6 +42,7 @@
     modules = [
      ./hosts/nullpointer/default.nix
      inputs.home-manager.nixosModules.home-manager
+     inputs.nvf.homeManagerModules.default
 
     ];
    };
