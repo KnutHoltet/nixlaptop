@@ -41,9 +41,8 @@
     specialArgs =  { inherit inputs; };
     modules = [
      ./hosts/nullpointer/default.nix
-     ./hosts/nullpointer/home.nix
      inputs.home-manager.nixosModules.home-manager
-     inputs.nvf.homeManagerModules.default
+     inputs.nvf.nixosModules.default
 
 
 
