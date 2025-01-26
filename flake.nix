@@ -34,7 +34,7 @@
     modules = [
      ./hosts/nullpointer/default.nix
      inputs.home-manager.nixosModules.home-manager
-     nvf.nixosModules.default
+     inputs.nvf.nixosModules.default
 
     ];
    };
