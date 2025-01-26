@@ -9,5 +9,7 @@
     ./xdg-portal.nix
     ./timezone.nix
     ./fonts.nix
+    ./pde
+
   ];
 }
