@@ -23,6 +23,10 @@ in
       xwayland = {
         force_zero_scaling = true;
       };
+
+      monitor = [
+        ", preferred, auto, 1, mirror"
+      ];
  
       
       "$mod" = "SUPER";
