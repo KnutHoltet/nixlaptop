@@ -11,6 +11,14 @@
 
     programs.ghostty = {
       enable = true;
+      theme = "catppuccin-mocha";
+      
+      keybind = [
+        "ctrl+h=goto_split:left"
+        "ctrl+l=goto_split:right"
+      ];
+
+
     };
     
   };
