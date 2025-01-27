@@ -12,7 +12,7 @@
     programs.ghostty = {
       enable = true;
       settings = {
-        theme = "Adwaita";
+        theme = "coffee_theme";
         keybind = [
           # "ctrl+h=goto_split:left"
           # "ctrl+l=goto_split:right"
