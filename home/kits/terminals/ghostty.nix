@@ -14,8 +14,8 @@
       settings = {
         theme = "Adwaita";
         keybind = [
-          "ctrl+h=goto_split:left"
-          "ctrl+l=goto_split:right"
+          # "ctrl+h=goto_split:left"
+          # "ctrl+l=goto_split:right"
         ];
       }; # settings
 
