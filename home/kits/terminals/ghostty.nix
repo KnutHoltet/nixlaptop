@@ -17,6 +17,10 @@
           # "ctrl+h=goto_split:left"
           # "ctrl+l=goto_split:right"
         ];
+
+        window-decoration = false; 
+
+
       }; # settings
 
     }; # programs.ghostty
