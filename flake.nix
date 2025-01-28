@@ -53,12 +53,14 @@
    }; # nixosConfigurations
 
 
-   # homeConfigurations = {
-   #   username = home-manager.lib.homeManagerConfiguration {
-   #     pkgs = nixpkgs = nixpkgs.legacyPackages.x86_64-linux;  
-   #     modules = [  ];
-   #   };
-   # };
+   homeConfigurations = {
+     username = home-manager.lib.homeManagerConfiguration {
+       pkgs = nixpkgs = nixpkgs.legacyPackages.x86_64-linux;  
+       modules = [
+         inputs.nvf.homeManagerModules.default
+       ];
+     };
+   };
    
 
   };
