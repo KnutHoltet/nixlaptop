@@ -44,8 +44,8 @@
      ./home/kits/utilities/pde/nvf.nix
 
      inputs.home-manager.nixosModules.home-manager
-     inputs.nvf.homeManagerModules.default
-     # inputs.nvf.nixosModules.default
+     # inputs.nvf.homeManagerModules.default
+     inputs.nvf.nixosModules.default
 
 
 
