@@ -41,7 +41,7 @@
     specialArgs =  { inherit inputs; };
     modules = [
      ./hosts/nullpointer/default.nix
-     ./home/kits/pde/nvf.nix
+     ./home/kits/utilities/pde/nvf.nix
 
      inputs.home-manager.nixosModules.home-manager
      inputs.nvf.homeManagerModules.default
