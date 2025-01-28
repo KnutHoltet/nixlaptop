@@ -1,4 +1,4 @@
-{ config, ... }: {
+{
   description = ''
     Thursday, October 31st. The city streets are crowded for the holiday.
   '';
