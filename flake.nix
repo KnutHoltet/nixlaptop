@@ -1,4 +1,4 @@
-{
+{ config, ... }: {
   description = ''
     Thursday, October 31st. The city streets are crowded for the holiday.
   '';
@@ -47,20 +47,14 @@
      # inputs.nvf.homeManagerModules.default
      # inputs.nvf.nixosModules.default
 
-
-
     ];
    }; # nixosConfigurations
 
+   # homeConfigurations = {
+   #   
+   # };
 
-   homeConfigurations = {
-     username = home-manager.lib.homeManagerConfiguration {
-       pkgs = nixpkgs.legacyPackages.x86_64-linux;  
-       modules = [
-         inputs.nvf.homeManagerModules.default
-       ];
-     };
-   };
+
    
 
   };
