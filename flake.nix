@@ -41,16 +41,25 @@
     specialArgs =  { inherit inputs; };
     modules = [
      ./hosts/nullpointer/default.nix
-     ./home/kits/utilities/pde/nvf.nix
+     # ./home/kits/utilities/pde/nvf.nix
 
      inputs.home-manager.nixosModules.home-manager
      # inputs.nvf.homeManagerModules.default
-     inputs.nvf.nixosModules.default
+     # inputs.nvf.nixosModules.default
 
 
 
     ];
-   };
+   }; # nixosConfigurations
+
+
+   # homeConfigurations = {
+   #   username = home-manager.lib.homeManagerConfiguration {
+   #     pkgs = nixpkgs = nixpkgs.legacyPackages.x86_64-linux;  
+   #     modules = [  ];
+   #   };
+   # };
+   
 
   };
 }
