@@ -44,7 +44,7 @@
 
 
      inputs.home-manager.nixosModules.home-manager
-     inputs.homeManagerModules.default
+     inputs.nvf.homeManagerModules.default
 
     ];
    }; # nixosConfigurations
