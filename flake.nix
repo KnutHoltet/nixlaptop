@@ -46,16 +46,17 @@
     ];
    }; # nixosConfigurations
 
-   # homeConfigurations = {
-   #   username = home-manager.lib.homeManagerConfiguration {
-   #     extraSpecialArgs = { inherit inputs };
-   #     modules = [
-   #       inputs.nvf.homeManagerModules.nvf
+   homeConfigurations = {
+     username = home-manager.lib.homeManagerConfiguration {
+       inherit pkgs;
+       modules = [
+         ./home/kits/utilities/pde/nvf.nix
+         inputs.nvf.homeManagerModules.nvf
 
-   #     ];
+       ];
 
-   #   };
-   # };
+     };
+   };
 
 
    
