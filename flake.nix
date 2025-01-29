@@ -24,9 +24,10 @@
 
   outputs =
      { nixpkgs, ...  } @ inputs: 
-   # let
+   let
+     username = import config.var.username;
 
-   # in
+   in
 
   {
   
