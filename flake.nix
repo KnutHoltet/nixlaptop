@@ -41,7 +41,7 @@
     modules = [
      ./hosts/nullpointer/default.nix
 
-     nvf.nixosModules.default
+     inputs.nvf.nixosModules.default
      
 
     ];
