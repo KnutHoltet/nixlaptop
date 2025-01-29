@@ -30,7 +30,7 @@
 
    let
      varConfig = import ./hosts/nullpointer/variables.nix;
-     username = varConfig.var.username;
+     hostname = varConfig.var.hostname;
    in
 
   {
@@ -43,7 +43,6 @@
 
      inputs.home-manager.nixosModules.home-manager
      inputs.nvf.nixosModules.default
-     
 
     ];
    }; # nixosConfigurations
