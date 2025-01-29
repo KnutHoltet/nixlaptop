@@ -46,16 +46,16 @@
     ];
    }; # nixosConfigurations
 
-   homeConfigurations = {
-     username = home-manager.lib.homeManagerConfiguration {
-       extraSpecialArgs = { inherit inputs };
-       modules = [
-         inputs.nvf.homeManagerModules.nvf
+   # homeConfigurations = {
+   #   username = home-manager.lib.homeManagerConfiguration {
+   #     extraSpecialArgs = { inherit inputs };
+   #     modules = [
+   #       inputs.nvf.homeManagerModules.nvf
 
-       ];
+   #     ];
 
-     };
-   };
+   #   };
+   # };
 
 
    
