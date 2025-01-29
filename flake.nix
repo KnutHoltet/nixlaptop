@@ -23,11 +23,10 @@
   };
 
   outputs =
-     { nixpkgs, ...  } @ inputs: 
+     { nixpkgs, config, ...  } @ inputs: 
 
-   let
-     username = config.var.username;
-   in
+   # let
+   # in
 
   {
   
