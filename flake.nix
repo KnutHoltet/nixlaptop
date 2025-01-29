@@ -46,20 +46,5 @@
     ];
    }; # nixosConfigurations
 
-   # homeConfigurations = {
-   #   "knuth@nixos" = home-manager.lib.homeManagerConfiguration {
-   #     inherit pkgs;
-   #     modules = [
-   #       ./home/kits/utilities/pde/nvf.nix
-   #       inputs.nvf.homeManagerModules.nvf
-
-   #     ];
-
-   #   };
-   # };
-
-
-   
-
   };
 }
