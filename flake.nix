@@ -31,12 +31,6 @@
    in
 
   {
-  
-   # packages."x86_64-linux".default =
-   #   (nvf.lib.neovimConfiguration {
-   #     pkgs = nixpkgs.legacyPackages."x86_64-linux";
-   #     modules = [ ./home/kits/pde/nvf.nix ];
-   #   }).neovim;
 
 
    nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
@@ -52,9 +46,16 @@
     ];
    }; # nixosConfigurations
 
-   # homeConfigurations = {
-   #   
-   # };
+   homeConfigurations = {
+     username = home-manager.lib.homeManagerConfiguration {
+       extraSpecialArgs = { inherit inputs };
+       modules = [
+         inputs.nvf.homeManagerModules.nvf
+
+       ];
+
+     };
+   };
 
 
    
