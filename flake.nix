@@ -23,10 +23,12 @@
   };
 
   outputs =
-     { nixpkgs, config, ...  } @ inputs: 
+     { nixpkgs, ...  } @ inputs: 
 
-   # let
-   # in
+   let
+     varConfig = import ./hosts/nullpointer/variables.nix;
+     username = varConfig.var.username;
+   in
 
   {
   
