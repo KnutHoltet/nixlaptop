@@ -26,7 +26,7 @@
      { nixpkgs, ...  } @ inputs: 
 
    let
-     inherit config;
+     username = config.var.username;
    in
 
   {
