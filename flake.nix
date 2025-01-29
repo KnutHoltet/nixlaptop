@@ -41,7 +41,6 @@
     modules = [
      ./hosts/nullpointer/default.nix
      ./hosts/nullpointer/home.nix
-     ./home
 
 
      inputs.home-manager.nixosModules.home-manager
