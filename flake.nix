@@ -25,6 +25,7 @@
   outputs =
      { nixpkgs, ...  } @ inputs: 
    let
+     variables = import ./hosts/nullpointer/variables.nix;
      username = import config.var.username;
 
    in
