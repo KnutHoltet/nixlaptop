@@ -17,7 +17,10 @@
       inputs.hyprland.follows = "hyprland";
     };
 
-    nvf.url = "github:notashelf/nvf";
+    nvf = {
+      url = "github:notashelf/nvf";
+      inputs.nixpkgs.follows = "nixpkgs";
+    }; 
     
     
   };
@@ -37,11 +40,9 @@
     specialArgs =  { inherit inputs; };
     modules = [
      ./hosts/nullpointer/default.nix
-     # ./home/kits/utilities/pde/nvf.nix
 
-     inputs.home-manager.nixosModules.home-manager
-     # inputs.nvf.homeManagerModules.default
-     inputs.nvf.nixosModules.default
+     nvf.nixosModules.default
+     
 
     ];
    }; # nixosConfigurations
