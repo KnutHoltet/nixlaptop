@@ -40,10 +40,9 @@
     specialArgs =  { inherit inputs; };
     modules = [
      ./hosts/nullpointer/default.nix
-     # ./hosts/nullpointer/home.nix
+     ./hosts/nullpointer/home.nix
 
 
-     inputs.home-manager.nixosModules.home-manager
      # inputs.nvf.homeManagerModules.default
 
     ];
@@ -55,6 +54,7 @@
        inherit hostname;
        modules = [
          ./hosts/nullpointer/home.nix
+         inputs.home-manager.nixosModules.home-manager
          inputs.nvf.homeManagerModules.default
        ];
      };
