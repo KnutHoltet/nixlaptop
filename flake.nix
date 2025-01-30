@@ -40,26 +40,12 @@
     specialArgs =  { inherit inputs; };
     modules = [
      ./hosts/nullpointer/default.nix
-     # ./hosts/nullpointer/home.nix
-
-
-     # inputs.nvf.homeManagerModules.default
+     inputs.home-manager.nixosModules.home-manager
+     inputs.nvf.nixosModules.nvf
 
     ];
    }; # nixosConfigurations
 
-
-   homeConfigurations = {
-     nixos = inputs.home-manager.lib.homeManagerConfiguration {
-       inherit hostname;
-       modules = [
-         ./hosts/nullpointer/home.nix
-         inputs.home-manager.nixosModules.home-manager
-         inputs.nvf.homeManagerModules.default
-       ];
-     };
-  
-   };
 
 
 
