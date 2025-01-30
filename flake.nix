@@ -19,7 +19,7 @@
 
     nvf = {
       url = "github:notashelf/nvf";
-      inputs.nixpkgs.follows = "nixpkgs";
+      # inputs.nixpkgs.follows = "nixpkgs";
     }; 
     
     
@@ -41,7 +41,7 @@
     modules = [
      ./hosts/nullpointer/default.nix
      inputs.home-manager.nixosModules.home-manager
-     inputs.nvf.nixosModules.nvf
+     inputs.nvf.nixosModules.default
 
     ];
    }; # nixosConfigurations
