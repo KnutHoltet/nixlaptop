@@ -1,23 +1,16 @@
 { pkgs, lib, ... }: {
 
-  # nvf = {
-  #   enable = true;
-  #   
-  #   settings = {
-  #     vim.theme.enable = true;
-  #     vim.theme.name = "gruvbox";
-  #     vim.theme.style = "dark";
-
-  #     vim.languages.nix.enable = true;
-  #   };
-  # };
-
-  vim = {
-    theme.enable = true;
-    theme.name = "gruvbox";
-    theme.style = "dark";
+  nvf = {
+    enable = true;
     
-    languages.nix.enable = true;
+    settings = {
+      vim.theme.enable = true;
+      vim.theme.name = "gruvbox";
+      vim.theme.style = "dark";
+
+      vim.languages.nix.enable = true;
+    };
   };
+
 
 }
