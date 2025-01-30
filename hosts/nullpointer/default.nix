@@ -13,6 +13,8 @@
   # boot.loader.grub.enable = true;
   # boot.loader.grub.device = "/dev/sda";
   # boot.loader.grub.useOSProber = true;
+
+  nvf.enable = true;
  
 
   boot.loader.systemd-boot.enable = true;
