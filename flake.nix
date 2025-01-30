@@ -40,7 +40,7 @@
     specialArgs =  { inherit inputs; };
     modules = [
      ./hosts/nullpointer/default.nix
-     ./hosts/nullpointer/home.nix
+     # ./hosts/nullpointer/home.nix
 
 
      # inputs.nvf.homeManagerModules.default
