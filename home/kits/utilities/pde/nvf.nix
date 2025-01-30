@@ -1,6 +1,6 @@
 { pkgs, lib, ... }: {
 
-  nvf = {
+  programs.nvf = {
     enable = true;
     
     settings = {
@@ -11,6 +11,5 @@
       vim.languages.nix.enable = true;
     };
   };
-
 
 }
