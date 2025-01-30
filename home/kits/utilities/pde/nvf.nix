@@ -1,6 +1,6 @@
 { pkgs, lib, ... }: {
 
-  programs.nvf = {
+  nvf = {
     enable = true;
     
     settings = {
