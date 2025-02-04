@@ -37,7 +37,7 @@ in
         kb_layout = keyboardLayout;
         
         gesture_3flick_left = "workspace prev";
-        gesture_3flick_right = "workspace next"
+        gesture_3flick_right = "workspace next";
 
       };
       
