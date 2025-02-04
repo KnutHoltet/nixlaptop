@@ -41,6 +41,8 @@ in
         # "waybar"
         "swww-init"
       ];
+
+      disable_hyprland_logo = true;
       
 
 
