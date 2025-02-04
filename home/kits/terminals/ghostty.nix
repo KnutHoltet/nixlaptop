@@ -12,7 +12,7 @@
     programs.ghostty = {
       enable = true;
       settings = {
-        theme = "catppuccin-frappe";
+        theme = "GruvboxDark";
         keybind = [
           # "ctrl+h=goto_split:left"
           # "ctrl+l=goto_split:right"
