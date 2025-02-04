@@ -8,5 +8,6 @@ let
   '';
 
 in {
+  home.packages = [ swww-init ];
 
 }
