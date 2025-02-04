@@ -36,8 +36,6 @@ in
       input = {
         kb_layout = keyboardLayout;
         
-        gesture_3flick_left = "workspace prev";
-        gesture_3flick_right = "workspace next";
 
       };
       
