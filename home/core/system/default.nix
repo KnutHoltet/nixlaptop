@@ -6,5 +6,6 @@
     ./notification
     ./bars
     ./utils
+    ./wallpapers
   ];
 }

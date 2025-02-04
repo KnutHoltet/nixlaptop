@@ -2,5 +2,6 @@
   imports = [
     ./system
     ./persona
+    ./scripts
   ];
 }
