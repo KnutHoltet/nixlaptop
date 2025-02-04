@@ -39,6 +39,7 @@ in
       
       exec-once = [
         # "waybar"
+        "swww-init"
       ];
       
 

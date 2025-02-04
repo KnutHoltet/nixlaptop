@@ -11,7 +11,7 @@
 
       background = {
         monitor = "";
-        path = "$HOME/Downloads/black-and-white.png"; # TODO: only png supported for now
+        path = "$HOME/Downloads/grovboxanimer.png"; # TODO: only png supported for now
         # path = "";
         color = "rgba(25, 20, 20, 1.0)";
 
