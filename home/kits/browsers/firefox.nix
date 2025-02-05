@@ -14,6 +14,7 @@
       profiles.${config.var.username} = {
         extensions = with inputs.firefox-addons.packages."x86_64-linux"; [
           ublock-origin
+          gruvbox-dark-theme
         ];
 
       }; # profiles
