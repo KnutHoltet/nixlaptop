@@ -21,6 +21,11 @@
       url = "github:notashelf/nvf";
       # inputs.nixpkgs.follows = "nixpkgs";
     }; 
+
+    firefox-addons = {
+      url = "gitlab:rycee/nur-expressions?dir=pkgs/firefox-addons";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     
     
   };
@@ -42,6 +47,7 @@
      ./hosts/nullpointer/default.nix
      inputs.home-manager.nixosModules.home-manager
      inputs.nvf.nixosModules.default
+     inputs.firefox-addons.nixosModules.firefox-addons
 
     ];
    }; # nixosConfigurations
