@@ -10,9 +10,12 @@
     # home.packages = with pkgs; [ firefox ];
     programs.firefox = {
       enable = true;
-      # profiles.${user} = {
+      profiles.${user} = {
+        extensions = with pkgs.nur.repos.rycee.firefox-addons [
+          ublock-origin
+        ];
 
-      # }; # profiles
+      }; # profiles
     }; #programs.firefox
 
   };
