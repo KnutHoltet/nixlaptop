@@ -33,10 +33,8 @@
   outputs =
      { nixpkgs, ...  } @ inputs: 
 
-   let
-     varConfig = import ./hosts/nullpointer/variables.nix;
-     hostname = varConfig.var.hostname;
-   in
+   # let
+   # in
 
   {
 
@@ -47,7 +45,7 @@
      ./hosts/nullpointer/default.nix
      inputs.home-manager.nixosModules.home-manager
      inputs.nvf.nixosModules.default
-     inputs.firefox-addons.nixosModules.firefox-addons
+     inputs.firefox-addons.nixosModules.default
 
     ];
    }; # nixosConfigurations
