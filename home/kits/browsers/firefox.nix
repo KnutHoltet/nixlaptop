@@ -1,4 +1,4 @@
-{ pkgs, lib, config, ... }: {
+{ pkgs, lib, config, inputs, ... }: {
   
   options = {
     firefox.enable =
@@ -12,9 +12,9 @@
       enable = true;
 
       profiles.${config.var.username} = {
-        # extensions = with pkgs.nur.repos.rycee.firefox-addons; [
-        #   ublock-origin
-        # ];
+        extensions = with inputs.firefox-addons.packages."x86_64-linux"; [
+          ublock-origin
+        ];
 
       }; # profiles
 
