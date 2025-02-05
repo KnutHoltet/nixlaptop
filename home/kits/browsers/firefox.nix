@@ -11,7 +11,7 @@
     programs.firefox = {
       enable = true;
 
-      profiles.${user} = {
+      profiles.${config.var.username} = {
         extensions = with pkgs.nur.repos.rycee.firefox-addons; [
           ublock-origin
         ];
