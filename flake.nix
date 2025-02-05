@@ -22,12 +22,6 @@
       # inputs.nixpkgs.follows = "nixpkgs";
     }; 
 
-    firefox-addons = {
-      url = "gitlab:rycee/nur-expressions?dir=pkgs/firefox-addons";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-    
-    
   };
 
   outputs =
@@ -45,7 +39,6 @@
      ./hosts/nullpointer/default.nix
      inputs.home-manager.nixosModules.home-manager
      inputs.nvf.nixosModules.default
-     inputs.firefox-addons.nixosModules.default
 
     ];
    }; # nixosConfigurations
