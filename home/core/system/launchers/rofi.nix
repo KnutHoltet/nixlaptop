@@ -34,7 +34,7 @@
 
     }; # programs
 
-    launcherCommand = ''${rofi}/bin/rofi -modes drun -show drun'';
+    launcherCommand = ''rofi -modes drun -show drun'';
 
   }; # config -> rofi.enable
 
