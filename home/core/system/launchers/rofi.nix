@@ -32,10 +32,11 @@
       # theme = {
       # }; # theme
 
-
     }; # programs
 
-  };
+    launcherCommand = ''${rofi}/bin/rofi -modes drun -show drun'';
+
+  }; # config -> rofi.enable
 
 }
 
