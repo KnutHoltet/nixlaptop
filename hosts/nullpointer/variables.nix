@@ -26,7 +26,7 @@
     autoUpgrade = false;
     autoGrabageCollector = false;
 
-    sudoTimeStamp = -1;
+    sudoTimeStamp = 15;
     
     
   };
