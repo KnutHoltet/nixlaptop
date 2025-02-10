@@ -54,6 +54,8 @@
           background-color = "@background";
         };
 
+        # https://github.com/adi1090x/rofi/blob/master/files/launchers/type-7/style-5.rasi
+        # https://github.com/nmasur/dotfiles/blob/master/modules/nixos/graphical/rofi.nix
 
 
       }; # theme

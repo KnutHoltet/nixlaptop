@@ -1,7 +1,8 @@
 { config, ... }: {
 
-  security.sudo = {
-    timestampTimeout = config.var.sudoTimeStamp;
-  }; 
+  # TODO: fix sudo 
+  # security.sudo = {
+  #   timestampTimeout = config.var.sudoTimeStamp;
+  # }; 
 
 }
