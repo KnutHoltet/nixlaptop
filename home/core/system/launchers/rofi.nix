@@ -38,7 +38,7 @@
           selected = "#426647";
           active = "#2E3F34";
           urgent = "#D08261";
-        }
+        };
 
         "#window" = {
           transparency = "real";
