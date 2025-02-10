@@ -7,10 +7,31 @@
 
   config = lib.mkIf config.rofi.enable {
 
-    # home.packages = with pkgs; [ wofi-emoji ];
+    home.packages = with pkgs; [ jq ];
 
     programs.rofi = {
       enable = true;
+      location = "center";
+      plugins = [
+        pkgs.rofi-calc
+        pkgs.rofi-emoji
+        pkgs.rofi-systemd
+      ];
+
+      extraConfig = {
+        modi = "drun,filebrowser,window";
+        show-icons = true;
+        display-drun = "";
+        display-run = "";
+        display-filebrowser = "";
+        display-window = "";
+        drun-display-format = "{name}";
+        window-format = "{w} · {c} · {t}";
+      };
+
+      # theme = {
+      # }; # theme
+
 
     }; # programs
 
