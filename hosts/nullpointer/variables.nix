@@ -25,6 +25,8 @@
 
     autoUpgrade = false;
     autoGrabageCollector = false;
+
+    sudoTimeStamp = -1;
     
     
   };
