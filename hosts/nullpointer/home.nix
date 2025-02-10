@@ -12,8 +12,9 @@
   kitty.enable = true;
   ghostty.enable = true;
   firefox.enable = true;
-  wofi.enable = true;
+  # wofi.enable = true;
   thunar.enable = true;
+  rofi.enable = true;
 
 
   # TODO: Move waybar options to different file
