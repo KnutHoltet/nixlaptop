@@ -57,7 +57,7 @@
       label = [
         # TODO: lockscreen shows music
         {
-          monitor = "";        
+          # monitor = "";        
           
         } # Shows active playing music
 
