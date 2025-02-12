@@ -1,5 +1,5 @@
 # TODO: This stuff has colors
-# TODO: Set a background for lockscreen
+# TODO: HYPRLOCK ADD TIME AND DATE STUFF
 { config, lib, ... }: {
   programs.hyprlock = {
     enable = true;
