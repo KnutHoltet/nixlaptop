@@ -28,7 +28,6 @@ in
     vim
     wget
     curl
-    python311
   ];
 
 

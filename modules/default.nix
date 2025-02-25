@@ -3,5 +3,6 @@
     ./hardware
     ./usrEnv
     ./pde
+    ./prgLanguages
   ];
 }
