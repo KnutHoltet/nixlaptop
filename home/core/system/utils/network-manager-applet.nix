@@ -1,3 +1,3 @@
 {
-  services.network-manager-applet.enable = false;
+  services.network-manager-applet.enable = true;
 }
