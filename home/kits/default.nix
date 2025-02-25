@@ -1,5 +1,6 @@
 {
   imports = [
+    /.languages
     ./fetching
     ./terminals
     ./browsers

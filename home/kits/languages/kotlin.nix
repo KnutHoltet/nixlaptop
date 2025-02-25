@@ -2,7 +2,7 @@
 
   home.packages = with pkgs; [
     kotlin
-    jdk8
+    jdk
     gradle_7
   ];
 
