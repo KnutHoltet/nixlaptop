@@ -4,6 +4,7 @@
     kotlin
     jdk
     gradle_7
+    python311
   ];
 
 }
