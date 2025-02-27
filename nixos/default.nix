@@ -10,5 +10,6 @@
     ./timezone.nix
     ./fonts.nix
     ./security.nix
+    ./virtualisation.nix
   ];
 }
