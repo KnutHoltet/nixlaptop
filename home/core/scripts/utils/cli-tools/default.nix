@@ -4,10 +4,9 @@ let
 
   count-lines = pkgs.writeShellScriptBin "count-lines" ''
     if [ -z "$1" ]; then
-      echo "Please provide a file extension (e.g., '*.java')"
       return 1
     fi
-      wc -l $1 | awk '{s+=$1} END {print s}'
+      find . -type f -name "$1" -exec grep -v '^[[:space:]]*$' {} \; | wc -l
   '';
 
 in {
