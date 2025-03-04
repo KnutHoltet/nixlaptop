@@ -14,7 +14,7 @@
       settings = {
         theme = "GruvboxDark";
         keybind = [
-          "alt+h=goto_split:left"
+          "ctrl+h=goto_split:left"
           "alt+l=goto_split:right"
         ];
 
