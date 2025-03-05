@@ -12,6 +12,7 @@
   kitty.enable = true;
   ghostty.enable = true;
   firefox.enable = true;
+  brave.enable = true;
   # wofi.enable = true;
   thunar.enable = true;
   rofi.enable = true;

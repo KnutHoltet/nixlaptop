@@ -1,11 +1,11 @@
 { pkgs, lib, config, inputs, ... }: {
   
   options = {
-    firefox.enable =
+    brave.enable =
       lib.mkEnableOption "Enables Brave";
   };
   
-  config = lib.mkIf config.firefox.enable {
+  config = lib.mkIf config.brave.enable {
     home.packages = with pkgs; [
       brave
     ];
