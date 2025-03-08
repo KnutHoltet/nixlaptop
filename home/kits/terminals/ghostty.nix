@@ -12,13 +12,30 @@
     programs.ghostty = {
       enable = true;
       settings = {
-        theme = "GruvboxDark";
-        font-size = "16";
+        theme = "catppuccin-mocha";
+        font-size = "14";
         keybind = [
-          "ctrl+a=new_window"
         ];
 
         window-decoration = false; 
+        window-inherit-working-directory = true;
+        window-theme = "dark";
+        window-save-state = "always";
+
+        mouse-hide-while-typing = true;
+        copy-on-select = true;
+
+        background-opacity = 0.7;
+        font-family = "JetBrainsMono Nerd Font";
+
+        cursor-style = "block";
+
+        adw-toolbar-style = "raised";
+
+
+
+
+
 
 
       }; # settings
