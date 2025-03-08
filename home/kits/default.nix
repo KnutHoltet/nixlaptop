@@ -9,5 +9,6 @@
     ./toolkit
     ./workspace
     ./ides
+    ./cli
   ];
 }

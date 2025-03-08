@@ -12,7 +12,7 @@
       
       # "$mod, U, exec, ${pkgs.kitty}/bin/kitty" # Kitty
       "$mod, U, exec, ${pkgs.ghostty}/bin/ghostty" # Ghostty
-      "$mod, B, exec, ${pkgs.firefox}/bin/firefox" # Firefox
+      "$mod, B, exec, ${pkgs.brave}/bin/brave" # Firefox
       "$mod, SPACE, exec, rofi -show drun" # Launcher
 
       "$mod, Q, killactive," # Close Window

@@ -13,9 +13,9 @@
       enable = true;
       settings = {
         theme = "GruvboxDark";
+        font-size = "16";
         keybind = [
-          # "ctrl+h=goto_split:left"
-          # "alt+l=goto_split:right"
+          "ctrl+a=new_window"
         ];
 
         window-decoration = false; 
