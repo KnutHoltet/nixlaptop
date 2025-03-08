@@ -1,21 +1,22 @@
 { pkgs, lib, config, ... }: {
 
   options = {
-    rofi.enable = lib.mkEnableOption "Enable Rofi";
+    rofi.enable =
+      lib.mkEnableOption "Enables rofi";
   };
 
   config = lib.mkIf config.rofi.enable {
 
-    home.packages = with pkgs; [
-      rofi
-      rofi-calc
-      rofi-emoji
-      rofi-systemd
-      jq
-    ];
+    home.packages = with pkgs; [ jq ];
 
     programs.rofi = {
       enable = true;
+      location = "center";
+      plugins = [
+        pkgs.rofi-calc
+        pkgs.rofi-emoji
+        pkgs.rofi-systemd
+      ];
 
       extraConfig = {
         modi = "drun,run,filebrowser,window";
@@ -44,7 +45,7 @@
           location = "center";
           anchor = "center";
           fullscreen = false;
-          width = "1000px"; # Fixed typo (was widt)
+          widt = "1000px";
           x-offset = "0px";
           y-offset = "0px";
 
@@ -65,6 +66,7 @@
         "#imagebox" = {
           padding = "20px";
           background-color = "transparent";
+          # background-image = "";
           orientation = "vertical";
           children = [ "inputbar" "dummy" "mode-switcher" ];
         };
@@ -77,7 +79,9 @@
           children = [ "message" "listview" ];
         };
 
-        "#dummy" = { background-color = "transparent"; };
+        "#dummy" = {
+          background-color = "transparent";
+        };
 
         "#inputbar" = {
           enabled = true;
@@ -154,7 +158,7 @@
           cursor = "pointer";
         };
 
-        "#element normal.normal" = {
+        "#element normal.normal" = {
           background-color = "inherit";
           text-color = "inherit";
         };
@@ -195,19 +199,21 @@
           background-color = "transparent";
           text-color = "inherit";
           cursor = "inherit";
-          vertical-align = "0.5";
-          horizontal-align = "0.0";
+          vertical-align = 0.5;
+          horizontal-align = 0.0;
         };
 
-        "#message" = { background-color = "transparent"; };
+        "#message" = {
+          background-color = "transparent";
+        };
 
         "#textbox" = {
           padding = "15px";
           border-radius = "10px";
           background-color = "@background-alt";
           text-color = "@foreground";
-          vertical-align = "0.5";
-          horizontal-align = "0.0";
+          vertical-align = 0.5;
+          horizontal-align = 0.0;
         };
 
         "#error-message" = {
@@ -216,10 +222,21 @@
           background-color = "@background";
           text-color = "@foreground";
         };
-      }; # theme
-    }; # programs.rofi
 
-  }; # config.rofi.enable
+
+
+
+
+        # https://github.com/adi1090x/rofi/blob/master/files/launchers/type-7/style-5.rasi
+        # https://github.com/nmasur/dotfiles/blob/master/modules/nixos/graphical/rofi.nix
+
+
+      }; # theme
+
+    }; # programs
+
+
+  }; # config -> rofi.enable
 
 }
 
