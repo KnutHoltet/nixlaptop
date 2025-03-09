@@ -27,8 +27,18 @@ in
 
   home.packages = with pkgs; [
     hyprcursor
-    catppuccin-cursors.macchiatoTeal
+    # catppuccin-cursors.macchiatoTeal
   ];
+
+  home.pointerCursor = {
+    name = "catppuccin-cursors.macchiatoTeal";
+    package = pkgs.catppuccin-cursors.macchiatoTeal;
+    size = 24;
+
+    hyprcursor.enable = true;
+
+  };
+
 
   wayland.windowManager.hyprland = {
     enable = true;
@@ -43,10 +53,10 @@ in
         force_zero_scaling = true;
       };
 
-      env = [
-        "HYPRCURSOR_THEME, Catppuccin-Macchiato-Teal"
-        "HYPRCURSOR_SIZE, 24"
-      ];
+      # env = [
+      #   "HYPRCURSOR_THEME, Catppuccin-Macchiato-Teal"
+      #   "HYPRCURSOR_SIZE, 24"
+      # ];
 
       monitor = [
         "eDP-1, preferred, auto, 1"
