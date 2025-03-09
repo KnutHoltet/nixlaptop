@@ -53,6 +53,10 @@ in
         force_zero_scaling = true;
       };
 
+      cursor = {
+        enable_hyprcursor = true;
+      };
+
       # env = [
       #   "HYPRCURSOR_THEME, Catppuccin-Macchiato-Teal"
       #   "HYPRCURSOR_SIZE, 24"
