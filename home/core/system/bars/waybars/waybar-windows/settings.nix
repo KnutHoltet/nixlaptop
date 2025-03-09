@@ -56,8 +56,9 @@ in
       };
       
       "custom/os_button" = {
+        color = "#BD93F9";
         format = "󱄅";
-        on-click = "wofi --show drun";
+        on-click = "tofi-drun --drun-launch=true";
         tooltip = false;
       };
 
