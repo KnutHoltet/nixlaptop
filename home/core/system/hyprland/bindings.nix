@@ -13,7 +13,9 @@
       # "$mod, U, exec, ${pkgs.kitty}/bin/kitty" # Kitty
       "$mod, U, exec, ${pkgs.ghostty}/bin/ghostty" # Ghostty
       "$mod, B, exec, ${pkgs.brave}/bin/brave" # Firefox
-      "$mod, SPACE, exec, rofi -show drun" # Launcher
+
+      # "$mod, SPACE, exec, rofi -show drun" # Launcher
+      "$mod, SPACE, exec, tofi-drun --drun-launch=true" # Launcher
 
       "$mod, Q, killactive," # Close Window
       "$mod, T, togglefloating," # Toggle Floating
@@ -29,7 +31,6 @@
 
 
 
-      # "$shiftMod, S, exec, ${pkgs.firefox}/bin/firefox https://www.google.com/search?q=$(wofi --show dmenu -L 1 -p 'Search on internet' | sed 's/ /+/g')"
 
     ]++ (builtins.concatLists (builtins.genList (i:
       let ws = i + 1;

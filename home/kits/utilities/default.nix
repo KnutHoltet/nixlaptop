@@ -17,6 +17,8 @@
     zip
     unzip
 
+    gnused
+
     qt5.qtwayland
     qt6.qtwayland
     libsForQt5.qt5ct

@@ -17,6 +17,29 @@
     
     # will reset the submap, meaning end the current one and return to the global one
     submap=reset
+
+    # will switch to a submap called move
+    bind=$mainMod ALT,M,submap,move
+
+    # will start a submap called "move"
+    submap=move
+    
+    # sets repeatable binds for moving the active window
+    bind=,right,movewindow,r
+    bind=,left,movewindow,l
+    bind=,up,movewindow,u
+    bind=,down,movewindow,d
+    
+    bind=,l,movewindow,r
+    bind=,h,movewindow,l
+    bind=,k,movewindow,u
+    bind=,j,movewindow,d
+    
+    # use reset to go back to the global submap
+    bind=,escape,submap,reset 
+    
+    # will reset the submap, meaning end the current one and return to the global one
+    submap=reset
     
   '';
 

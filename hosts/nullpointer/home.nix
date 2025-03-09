@@ -3,19 +3,23 @@
 
   imports = [
     ./variables.nix
-
     ./../../home
+    ./theming.nix
   ]; 
 
   # TODO: Move options to a different file
   neofetch.enable = true;
   kitty.enable = true;
   ghostty.enable = true;
-  firefox.enable = true;
+  firefox.enable = false;
   brave.enable = true;
-  # wofi.enable = true;
   thunar.enable = true;
-  rofi.enable = true;
+
+
+  # Launchers
+  # wofi.enable = true;
+  # rofi.enable = true;
+  tofi.enable = true;
 
 
   # TODO: Move waybar options to different file

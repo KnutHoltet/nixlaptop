@@ -12,7 +12,7 @@
     programs.ghostty = {
       enable = true;
       settings = {
-        theme = "catppuccin-mocha";
+        theme = "Dracula";
         font-size = "14";
         keybind = [
         ];
@@ -25,7 +25,7 @@
         mouse-hide-while-typing = true;
         copy-on-select = true;
 
-        background-opacity = 0.7;
+        background-opacity = 0.9;
         font-family = "JetBrainsMono Nerd Font";
 
         cursor-style = "block";

@@ -9,8 +9,12 @@ All credits to them and the great repos!
 
 [XNM1](https://github.com/XNM1) for Nix related stuff  
 
-[namishh](https://github.com/namishh) for Nix related stuff  
+[namishh](https://github.com/namishh) for Nix related stuff
 
 [FireDrop6000](https://github.com/FireDrop6000) for hyprlock lockscreen   
 
-[adi1090x](https://github.com/adi1090x) for rofi theme  
+[adi1090x](https://github.com/adi1090x) for rofi theme    
+
+[Aylur](https://github.com/Aylur) for starship nix configuration and misc from his famous [dotfiles](https://github.com/Aylur/dotfiles) repo      
+
+[Atemo-C](https://github.com/Atemo-C) tofi config :)

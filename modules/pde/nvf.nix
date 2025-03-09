@@ -13,14 +13,11 @@
       
       settings = {
         vim.theme.enable = true;
-        vim.theme.name = "gruvbox";
+        vim.theme.name = "dracula";
         vim.theme.style = "dark";
 
         vim.languages.nix.enable = true;
       };
     };
   };
-
-
-
 }
