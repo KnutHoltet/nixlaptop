@@ -25,6 +25,11 @@ in
    
   ];
 
+  home.packages = with pkgs; [
+    hyprcursor
+    catppuccin-cursors.macchiatoTeal
+  ];
+
   wayland.windowManager.hyprland = {
     enable = true;
     xwayland = {
@@ -37,6 +42,13 @@ in
       xwayland = {
         force_zero_scaling = true;
       };
+
+      env = [
+        "HYPRCURSOR_THEME,Catppuccin-Macchiato-Teal"
+        "HYPRCURSOR_SIZE,24"
+        "XCURSOR_THEME,Catppuccin-Macchiato-Teal"
+        "XCURSOR_SIZE,24"
+      ];
 
       monitor = [
         "eDP-1, preferred, auto, 1"
