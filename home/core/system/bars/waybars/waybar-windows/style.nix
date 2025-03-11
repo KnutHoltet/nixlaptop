@@ -61,6 +61,7 @@ tooltip label{
 	padding-left: 12px;
 	padding-right: 20px;
 	transition: all 0.25s cubic-bezier(0.165, 0.84, 0.44, 1);
+        color: #BD93F9;
 }
 #custom-os_button:hover {
   background:  @bg_hover;

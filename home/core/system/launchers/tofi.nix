@@ -4,7 +4,7 @@ let
   selectionColor = "#ffffffff";
   selectionBackground = "#0f415fdd";
   inputBackground = "141414dd";
-  borderColor = "#0080ff";
+  borderColor = "#BD93F9";
 in {
 
   options = {
