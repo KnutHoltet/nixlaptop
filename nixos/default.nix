@@ -11,6 +11,6 @@
     ./fonts.nix
     ./security.nix
     ./virtualisation.nix
-    ./usb.nix
+    # ./usb.nix
   ];
 }
