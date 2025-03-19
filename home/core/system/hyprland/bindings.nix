@@ -27,6 +27,7 @@
       "$mod, k, movefocus, u" # Move Focus Down 
 
       "$shiftMod, l, exec, hyprlock"
+      "$shiftMod, g, exec, hyprshot -m output --clipboard-only"
 
 
 
