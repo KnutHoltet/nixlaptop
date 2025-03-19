@@ -29,6 +29,11 @@
       "$shiftMod, l, exec, hyprlock"
       "$shiftMod, g, exec, hyprshot -m output --clipboard-only"
 
+      "$shiftMod, f11, exec, brightnessctl s 5%- && notify-send 'Brightness: $(brightnessctl g) / $(brightnessctl m)'"
+      "$shiftMod, f12, exec, brightnessctl s +5% && notify-send 'Brightness: $(brightnessctl g) / $(brightnessctl m)'"
+
+      # "$shiftMod, g, exec, hyprshot -m output --clipboard-only"
+
 
 
 
