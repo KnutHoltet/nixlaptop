@@ -10,5 +10,6 @@
     pipes
     cmatrix
     asciiquarium
+    ttysvr
   ];
 }
