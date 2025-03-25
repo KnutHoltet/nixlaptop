@@ -13,6 +13,8 @@
       # "$mod, U, exec, ${pkgs.kitty}/bin/kitty" # Kitty
       "$mod, U, exec, ${pkgs.ghostty}/bin/ghostty" # Ghostty
       "$mod, B, exec, ${pkgs.brave}/bin/brave" # Firefox
+      "$mod, O, exec, ${pkgs.anytype}/bin/anytype" # Firefox
+      "$mod, P, exec, ${pkgs.gimp}/bin/gimp" # Firefox
 
       # "$mod, SPACE, exec, rofi -show drun" # Launcher
       "$mod, SPACE, exec, tofi-drun --drun-launch=true" # Launcher
