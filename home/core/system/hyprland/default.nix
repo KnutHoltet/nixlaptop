@@ -95,7 +95,7 @@ in
         gaps_in = gaps-in;
         gaps_out = gaps-out;
         border_size = border-size;
-        border_part_of_window = true;
+        # border_part_of_window = true;
         "col.active_border" = border-color;
         layout = "master";
       };
