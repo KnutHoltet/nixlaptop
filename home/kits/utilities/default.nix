@@ -35,5 +35,7 @@
 
     meson
 
+    ngrok
+
   ];
 }
