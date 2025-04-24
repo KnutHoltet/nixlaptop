@@ -7,5 +7,6 @@
     ./bars
     ./utils
     ./wallpapers
+    ./network
   ];
 }
