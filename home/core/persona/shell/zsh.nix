@@ -13,7 +13,7 @@
       size = 10000;
     };
 
-    initExtra = ''
+    initContent= ''
     '';
 
     shellAliases = {
