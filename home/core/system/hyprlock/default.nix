@@ -1,130 +1,131 @@
-# TODO: This stuff has colors
-# TODO: HYPRLOCK ADD TIME AND DATE STUFF
 { config, lib, ... }: {
   programs.hyprlock = {
     enable = true;
-    
+
     settings = {
       general = {
-        immediate_render = true;
+        no_fade_in = true;
+        no_fade_out = true;
+        hide_cursor = false;
+        grace = 0;
+        disable_loading_bar = true;
       };
 
       background = {
         monitor = "";
-        path = "$HOME/Downloads/l.png"; # TODO: only png supported for now
-        # path = "";
-        color = "rgba(25, 20, 20, 1.0)";
+        path = "/home/knuth/Downloads/pokemontyp.jpg";
+        blur_passes = 2;
+        contrast = 1;
+        brightness = 0.5;
+        vibrancy = 0.2;
+        vibrancy_darkness = 0.2;
+      };
 
-        blur_passes = 0;
-        blur_size = 2;
-        noise  = 0;
-        contrast = 0;
-        brightness = 0;
-        vibrancy = 0;
-        vibrancy_darkness = 0.0;
-      }; # background
-
-
-      input-field = lib.mkForce {
+      input-field = {
         monitor = "";
-        size = "300, 30";
-        outline_thickness = 0;
-        dots_size = 0.0;
-        dots_spacing = 0.55;
+        size = "250, 60";
+        outline_thickness = 2;
+        dots_size = 0.2;
+        dots_spacing = 0.35;
         dots_center = true;
-        dots_rounding = -1;
-        outer_color = "rgba(242, 243, 244, 0)";
-        inner_color = "rgba(242, 243, 244, 0)";
-        font_color = "rgba(242, 243, 244, 0.75)";
+        outer_color = "rgba(0, 0, 0, 0)";
+        inner_color = "rgba(0, 0, 0, 0.2)";
+        font_color = "$foreground";
         fade_on_empty = false;
-        placeholder_text = "";
-        hide_input = false;
-        check_color = "rgba(204, 136, 34, 0)";
-        fail_color = "rgba(204, 34, 34, 0)";
-        fail_text = "$FAIL <b>($ATTEMPTS)</b>";
-        fail_transition = 300;
-        capslock_color = -1;
-        numlock_color = -1;
-        bothlock_color = -1;
-        invert_numlock = false;
-        swap_font_color = false;
-        position = "0, -468";
-        halign = "center";
-        valign = "center";
-      }; # input-field
-
-
-      label = [
-        # TODO: lockscreen shows music
-        {
-          # monitor = "";        
-          
-        } # Shows active playing music
-
-        {
-          monitor = "";
-          text = ''cmd[update:1000] echo "$(date + "%A, %B %d")"'';
-          color = "rgba(242, 243, 244, 0.75)";
-          font_size = 30;
-          font_family = "SF Pro Display Bold";
-          position = "0, 405";
-          halign = "center";
-          valign = "center";
-        } # date label
-
-
-        {
-          monitor = "";
-          text = ''cmd[update:1000] echo "$(date + "%k:%M")"'';
-          color = "rgba(242, 243, 244, 0.75)";
-          font_size = 93;
-          font_family = "SF Pro Display Bold";
-          position = "0, 310";
-          halign = "center";
-          valign = "center";
-        }
-
-        {
-          monitor = "";
-          text = "Knut Holtet";
-          color = "rgba(242, 243, 244, 0.75)";
-          font_size = 12;
-          font_family = "SF Pro Display Bold";
-          position = "0, -407";
-          halign = "center";
-          valign = "center";
-        }
-
-        {
-          monitor = "";
-          text = "Enter Password";
-          color = "rgba(242, 243, 244, 0.75)";
-          font_size = 10;
-          font_family = "SF Pro Display";
-          positon = "0, -438";
-          halign = "center";
-          valign = "center";
-        }
-
-      ]; # label
-
-      image = {
-        monitor = "";
-        path = "$HOME/Downloads/thorfinnPfp.png";
-        border_color = "0xffdddddd";
-        border_size = 0;
-        size = 73;
         rounding = -1;
-        rotate = 0;
-        reload_time = -1;
-        reload_cmd = "";
-        position = "0, -353";
+        check_color = "rgb(204, 136, 34)";
+        placeholder_text = ''<i><span foreground="##cdd6f4">Input Password...</span></i>'';
+        hide_input = false;
+        position = "0, -200";
         halign = "center";
         valign = "center";
       };
 
-    }; # settings
-    
- 
-  }; # programs.hyprlock
+      label = [
+        {
+          monitor = "";
+          text = ''cmd[update:1000] echo "$(date +"%A, %B %d")"'';
+          color = "rgba(242, 243, 244, 0.75)";
+          font_size = 22;
+          font_family = "JetBrains Mono";
+          position = "0, 300";
+          halign = "center";
+          valign = "center";
+        }
+        {
+          monitor = "";
+          text = ''cmd[update:1000] echo "$(date +"%H:%M")"'';
+          color = "rgba(242, 243, 244, 0.75)";
+          font_size = 95;
+          font_family = "JetBrains Mono Extrabold";
+          position = "0, 200";
+          halign = "center";
+          valign = "center";
+        }
+        {
+          monitor = "";
+          text = ''cmd[update:1000] echo "$(/home/justin/Documents/Scripts/whatsong.sh)"'';
+          color = "$foreground";
+          font_size = 18;
+          font_family = "Metropolis Light, Font Awesome 6 Free Solid";
+          position = "0, 50";
+          halign = "center";
+          valign = "bottom";
+        }
+        {
+          monitor = "";
+          text = ''cmd[update:1000] echo "$(/home/justin/Documents/Scripts/whoami.sh)"'';
+          color = "$foreground";
+          font_size = 14;
+          font_family = "JetBrains Mono";
+          position = "0, -10";
+          halign = "center";
+          valign = "top";
+        }
+        {
+          monitor = "";
+          text = ''cmd[update:1000] echo "$(/home/justin/Documents/Scripts/battery.sh)"'';
+          color = "$foreground";
+          font_size = 24;
+          font_family = "JetBrains Mono";
+          position = "-90, -10";
+          halign = "right";
+          valign = "top";
+        }
+        {
+          monitor = "";
+          text = ''cmd[update:1000] echo "$(/home/justin/Documents/Scripts/network-status.sh)"'';
+          color = "$foreground";
+          font_size = 24;
+          font_family = "JetBrains Mono";
+          position = "-20, -10";
+          halign = "right";
+          valign = "top";
+        }
+      ];
+
+      image = [
+        {
+          monitor = "";
+          path = "/home/justin/Pictures/profile_pictures/justin_square.png";
+          size = 100;
+          border_size = 2;
+          border_color = "$foreground";
+          position = "0, -100";
+          halign = "center";
+          valign = "center";
+        }
+        {
+          monitor = "";
+          path = "/home/justin/Pictures/profile_pictures/hypr.png";
+          size = 75;
+          border_size = 2;
+          border_color = "$foreground";
+          position = "-50, 50";
+          halign = "right";
+          valign = "bottom";
+        }
+      ];
+    };
+  };
 }

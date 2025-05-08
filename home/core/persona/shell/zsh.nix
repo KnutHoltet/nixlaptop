@@ -13,8 +13,8 @@
       size = 10000;
     };
 
-    initContent= ''
-    '';
+    # initContent= ''
+    # '';
 
     shellAliases = {
       # Fun stuff
