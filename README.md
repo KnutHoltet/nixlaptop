@@ -11,7 +11,7 @@ All credits to them and the great repos!
 
 [namishh](https://github.com/namishh) for Nix related stuff
 
-[FireDrop6000](https://github.com/FireDrop6000) for hyprlock lockscreen   
+[justinmdickey](https://github.com/justinmdickey) for hyprlock lockscreen   
 
 [adi1090x](https://github.com/adi1090x) for rofi theme    
 
