@@ -1,4 +1,5 @@
 { config, lib, ... }: {
+  imports = [ ./swaylock.nix ];
   programs.hyprlock = {
     enable = true;
 

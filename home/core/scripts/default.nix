@@ -2,5 +2,6 @@
   imports = [
     ./swww
     ./utils
+    ./hyprlock
   ];
 }
