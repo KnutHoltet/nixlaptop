@@ -2,10 +2,8 @@
   services.swayidle = {
     enable = true;
     timeouts = [
-      {
-        timeout = 600;
-        command = "swayidle-sh";
-      }
+      { timeout = 1; command = "swayidle-sh"; }
     ];
   };
 }
+      # command = "swayidle-sh",
