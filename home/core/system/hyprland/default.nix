@@ -21,7 +21,7 @@ in
 
   imports = [
     ./bindings.nix
-    ./animations.nix
+    ./animations/animations.nix
    
   ];
 
