@@ -1,7 +1,6 @@
 {
   imports = [
     ./hyprland
-    ./hyprlock
     ./launchers
     ./notification
     ./bars

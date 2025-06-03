@@ -1,20 +1,17 @@
 { pkgs, lib, config, ... }:
 let
   keyboardLayout = config.var.keyboardLayout;
-
   border-size = config.var.theme.border-size;
   border-color = config.var.theme.border-color;
-  
-
-
-  gaps-in = config.var.theme.gaps-in;
-  gaps-out = config.var.theme.gaps-out;
+  gaps-in = 0;
+  gaps-out = 0;
   active-opacity = config.var.theme.active-opacity;
   inactive-opacity = config.var.theme.inactive-opacity;
-  rounding = config.var.theme.rounding;
+  rounding = 0;
   blur = config.var.theme.blur;
 in
 {
+
 
   systemd.user.targets.hyprland-session.Unit.Wants =
     [ "xdg-desktop-autostart.target" ];
@@ -22,7 +19,7 @@ in
   imports = [
     ./bindings.nix
     ./animations
-   
+    ./hyprlock
   ];
 
   home.packages = with pkgs; [
@@ -57,17 +54,11 @@ in
         enable_hyprcursor = true;
       };
 
-      # env = [
-      #   "HYPRCURSOR_THEME, Catppuccin-Macchiato-Teal"
-      #   "HYPRCURSOR_SIZE, 24"
-      # ];
-
       monitor = [
         "eDP-1, preferred, auto, 1"
         "HDMI-A-1, preferred, auto, 1, mirror, eDP-1"
       ];
  
-      
       "$mod" = "SUPER";
       "$shiftMod" = "SUPER_SHIFT";
 
@@ -94,10 +85,11 @@ in
         resize_on_border = true;
         gaps_in = gaps-in;
         gaps_out = gaps-out;
-        border_size = border-size;
+        # border_size = border-size;
+        border_size = 0;
         # border_part_of_window = true;
         "col.active_border" = border-color;
-        layout = "master";
+        layout = "dwindle";
       };
 
       decoration = {

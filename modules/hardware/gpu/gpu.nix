@@ -1,7 +1,5 @@
 {
-
   hardware = {
     graphics.enable = true;
   };
-
 }

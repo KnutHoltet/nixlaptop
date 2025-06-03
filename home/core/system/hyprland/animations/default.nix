@@ -1,5 +1,7 @@
 {
   imports = [
-    ./animations.nix
+    # ./animations.nix
+    ./noanimation.nix
+
   ];
 }

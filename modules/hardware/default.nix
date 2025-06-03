@@ -1,5 +1,5 @@
 {
-
-  imports = [ ./gpu ];
-
+  imports = [ 
+    ./gpu 
+  ];
 }

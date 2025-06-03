@@ -7,7 +7,8 @@
     ./theming.nix
   ]; 
 
-  # TODO: Move options to a different file
+  zsh.enable = true;
+
   neofetch.enable = true;
   kitty.enable = true;
   ghostty.enable = true;
@@ -16,19 +17,16 @@
   thunar.enable = true;
 
 
-  # Launchers
-  # wofi.enable = true;
-  # rofi.enable = true;
+  wofi.enable = true;
+  rofi.enable = true;
   tofi.enable = true;
 
 
-  # TODO: Move waybar options to different file
-  # Options to chose from: waybarWindows, 
   waybarWindows.enable = true;
+  darrowbar.enable = false;
   
 
   home = {
-
 
     inherit (config.var) username;
     homeDirectory = "/home/" + config.var.username;

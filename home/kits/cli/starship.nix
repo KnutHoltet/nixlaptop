@@ -1,8 +1,5 @@
-{
-  config,
-  pkgs,
-  ...
-}: {
+{ pkgs, lib, config, ...}: {
+
   xdg.configFile."starship.toml" = let
     lang = icon: color: {
       symbol = icon;
@@ -122,4 +119,5 @@
       extraConfig = "use ${dir}/init.nu";
     };
   };
+
 }

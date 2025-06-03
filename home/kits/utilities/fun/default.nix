@@ -7,8 +7,9 @@
   home.packages = with pkgs; [
     peaclock
     cbonsai
-    pipes
+    cava
     cmatrix
+    pipes
     asciiquarium
     ttysvr
   ];

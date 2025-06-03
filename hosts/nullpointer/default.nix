@@ -15,7 +15,6 @@
   # boot.loader.grub.useOSProber = true;
 
   nvf.enable = true;
-  python.enable = true;
  
 
   boot.loader.systemd-boot.enable = true;
