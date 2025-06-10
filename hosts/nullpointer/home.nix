@@ -9,6 +9,8 @@
 
   zsh.enable = true;
 
+  tmux.enable = true;
+
   neofetch.enable = true;
   kitty.enable = true;
   ghostty.enable = true;

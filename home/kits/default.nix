@@ -10,5 +10,6 @@
     ./workspace
     ./ides
     ./cli
+    ./music
   ];
 }
