@@ -27,6 +27,7 @@
         nswitch = "sudo nixos-rebuild switch --flake ."; # current dir
 
         ls  = "eza --icons=always --no-quotes";
+        vim = "nvim";
       };
     };
   };
