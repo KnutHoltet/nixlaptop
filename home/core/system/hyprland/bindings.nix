@@ -13,8 +13,6 @@
       # "$mod, U, exec, ${pkgs.kitty}/bin/kitty" # Kitty
       "$mod, U, exec, ${pkgs.ghostty}/bin/ghostty" # Ghostty
       "$mod, B, exec, ${pkgs.brave}/bin/brave" # Brave
-      "$mod, O, exec, ${pkgs.anytype}/bin/anytype" # Anytype
-      "$mod, P, exec, ${pkgs.gimp}/bin/gimp" # Gimp
       # "$mod, H, exec, ${pkgs.vivaldi}/bin/vivaldi" # Vivaldi
 
       # "$mod, SPACE, exec, rofi -show drun" # Launcher
