@@ -5,4 +5,6 @@
     ./pde
     ./gaming
   ];
+
+  services.openssh.enable = true;
 }
