@@ -5,8 +5,4 @@
 
   networking.networkmanager.enable = true;
   systemd.services.NetworkManager-wait-online.enable = false;
-  networking.firewall = {
-    enable = true;
-    allowedTCPPorts = [ 22 ];
-  };
 }
