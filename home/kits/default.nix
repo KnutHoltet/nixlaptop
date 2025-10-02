@@ -3,6 +3,7 @@
     ./languages
     ./fetching
     ./terminals
+    ./hacking
     ./browsers
     ./utilities
     ./messaging

@@ -10,7 +10,7 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    
+
     hyprland.url = "github:hyprwm/Hyprland";
     hyprland-plugins = {
       url = "github:hyprwm/hyprland-plugins";
@@ -20,7 +20,7 @@
     nvf = {
       url = "github:notashelf/nvf";
       # inputs.nixpkgs.follows = "nixpkgs";
-    }; 
+    };
 
     firefox-addons = {
       url = "gitlab:rycee/nur-expressions?dir=pkgs/firefox-addons";
@@ -31,26 +31,19 @@
   };
 
   outputs =
-     { nixpkgs, ...  } @ inputs: 
+     { nixpkgs, ...  } @ inputs:
 
    # let
    # in
 
   {
-
-
    nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
     specialArgs =  { inherit inputs; };
     modules = [
      ./hosts/nullpointer/default.nix
      inputs.home-manager.nixosModules.home-manager
      inputs.nvf.nixosModules.default
-
     ];
    }; # nixosConfigurations
-
-
-
-
   };
 }
