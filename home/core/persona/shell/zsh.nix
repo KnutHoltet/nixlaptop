@@ -12,7 +12,7 @@
       syntaxHighlighting.enable = true;
       enableCompletion = true;
 
-      
+
       history = {
         ignoreDups = true;
         save = 10000;
@@ -23,7 +23,7 @@
       shellAliases = {
         cs = "cowsay";
         asciiq = "asciiquarium";
-       
+
         nswitch = "sudo nixos-rebuild switch --flake ."; # current dir
 
         ls  = "eza --icons=always --no-quotes";

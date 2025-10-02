@@ -16,8 +16,8 @@
       # "$mod, H, exec, ${pkgs.vivaldi}/bin/vivaldi" # Vivaldi
 
       # "$mod, SPACE, exec, rofi -show drun" # Launcher
-      # "$mod, SPACE, n, exec, tofi-drun --drun-launch=true" # Launcher
-      "$mod, SPACE, exec, rofi -show drun" # Launcher
+      "$mod, SPACE, exec, tofi-drun --drun-launch=true" # Launcher
+      # "$mod, SPACE, exec, rofi -show drun" # Launcher
 
       "$mod, Q, killactive," # Close Window
       "$mod, T, togglefloating," # Toggle Floating
